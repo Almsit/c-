@@ -1,0 +1,15 @@
+D:\WEB\уроки\задания\с#\hello\bin\Debug\net6.0\hello.exe
+D:\WEB\уроки\задания\с#\hello\bin\Debug\net6.0\hello.deps.json
+D:\WEB\уроки\задания\с#\hello\bin\Debug\net6.0\hello.runtimeconfig.json
+D:\WEB\уроки\задания\с#\hello\bin\Debug\net6.0\hello.dll
+D:\WEB\уроки\задания\с#\hello\bin\Debug\net6.0\hello.pdb
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.csproj.AssemblyReference.cache
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.AssemblyInfoInputs.cache
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.AssemblyInfo.cs
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.csproj.CoreCompileInputs.cache
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.dll
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\refint\hello.dll
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.pdb
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\hello.genruntimeconfig.cache
+D:\WEB\уроки\задания\с#\hello\obj\Debug\net6.0\ref\hello.dll
