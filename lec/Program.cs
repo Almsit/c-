@@ -380,15 +380,9 @@ Console.WriteLine(res);
 */
 
 
-
-
 /*
 
-bool number = int.TryParse(Console.ReadLine(), out int number2);
-if(number != true){
-    Console.WriteLine("Число неверное");
-    return;
-}
+
 string number_arr = number2.ToString();
 
 string res = "";
@@ -402,10 +396,47 @@ if(number2.ToString() == res){
 }
 Console.WriteLine(number2+"-------"+res);
 
+
+
 */
 
 
+
+bool number = int.TryParse(Console.ReadLine(), out int number2);
+if(number != true){
+    Console.WriteLine("Число неверное");
+    return;
+}
+
+string Perev(int number2){
+    string number_arr = number2.ToString();
+    string res = "";
+    for(int i=number_arr.Length; i>0; i--){
+        res += number_arr[i-1];
+    }
+    return res;
+}
+string Srav(string a, string b){
+    
+    Console.WriteLine(a+"---"+b);
+    if(a == b){
+        return "Да";
+    } else {
+        return "Нет";
+    }
+}
+string res2 = Srav(Perev(number2), number2.ToString());
+Console.WriteLine(res2);
 /*
+if(number2.ToString() == res){
+    Console.WriteLine("Да");
+} else {
+    Console.WriteLine("Нет");
+}
+Console.WriteLine(number2+"-------"+res);
+
+
+
 
 bool number = int.TryParse(Console.ReadLine(), out int number2);
 if(number != true){
@@ -423,7 +454,7 @@ result(arr, number2);
 for(int i = 0; i<arr.Length; i++){
     Console.WriteLine(arr[i]);
 }
-*/
+
 
 
 Console.WriteLine("Введите координаты x,y,z для точки А разделяя их пробелом: ");
@@ -441,3 +472,5 @@ double zB = double.Parse(B[2]);
 
 double S = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA, 2));
 Console.WriteLine($"A({xA},{yA},{zA}); B({xB},{yB},{zB}) -> {S:f3}");
+
+*/
