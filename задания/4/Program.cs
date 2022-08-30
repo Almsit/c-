@@ -71,7 +71,19 @@ int Result(int n1){
 }
 Console.WriteLine(Result(numberInt1));
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 */
+//Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+/*
 Console.WriteLine("Введите 8 чисел для создания массива");
 string[] stringArr = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
@@ -110,3 +122,5 @@ string Result(string[] stringArr){
     return result;
 }
 Console.WriteLine(Result(stringArr));
+
+*/
