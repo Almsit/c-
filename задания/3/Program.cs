@@ -84,7 +84,7 @@ Print(arr);
 
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-
+/*
 Console.WriteLine("Введите координаты x,y,z для точки А разделяя их пробелом: ");
 string[] A = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 Console.WriteLine("Введите координаты x,y,z для точки B разделяя их пробелом: ");
@@ -128,3 +128,4 @@ double[] arr = Res(A[0], A[1], A[2], B[0], B[1], B[2]);
 Print(arr);
 
 
+*/
