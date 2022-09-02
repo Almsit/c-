@@ -2,16 +2,21 @@
 //Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 /*
 int countArr = 10;
-int methodRandom(int countForArr){
+int[] GetRandom(int countForArr){
     int[] arr = new int[countForArr];
+    for(int i=0; i<countForArr; i++){
+        arr[i] = new Random().Next(100, 1000);
+    }
+    return arr;
+}
+int GetNum(int[] arr){
     string stringArr = "";
     int num = 0;
     int numTemp = 0;
-    for(int i=0; i<countForArr; i++){
-        numTemp = 0;
-        arr[i] = new Random().Next(100, 1000);
+    for(int i=0; i<arr.Length; i++){
         stringArr = arr[i].ToString();
-        Console.Write((arr[i])+"-----");
+        numTemp = 0;
+        //Console.Write((arr[i])+"-----");
         for(int k = 0; k<stringArr.Length; k++){
             if(Convert.ToInt32(new string(stringArr[k], 1)) == 0){
                 continue;
@@ -21,14 +26,28 @@ int methodRandom(int countForArr){
                 numTemp++;
             }
         }
-        Console.WriteLine(numTemp);
-        Console.WriteLine(" ");
+        //Console.Write(numTemp);
+        //Console.WriteLine(" ");
     }
     return num;
 }
+string GetResult(int[] arr){
+    string result = "";
+    for(int i = 0; i<arr.Length; i++){
+        if(result == ""){
+            result = arr[i].ToString();
+        } else {
+            result += ", "+arr[i].ToString();
+        }
+    }
+    result = "["+result+"]";
+    return result;
+}
 
-Console.WriteLine(methodRandom(countArr));
+int[] arr = GetRandom(countArr);
+Console.WriteLine(GetNum(arr)+"---"+GetResult(arr));
 */
+
 //
 //
 //
@@ -44,25 +63,45 @@ Console.WriteLine(methodRandom(countArr));
 //Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 /*
 int countArr = 10;
-int methodRandom(int countForArr){
-    int num = 0;
+int[] GetRandom(int countForArr){
     int[] arr = new int[countForArr];
-
     for(int i=0; i<countForArr; i++){
         arr[i] = new Random().Next(-20, 10);
     }
+    return arr;
+}
+int GetNum(int[] arr){
+    int num = 0;
     for(int i = 0; i<arr.Length; i++){
          if((i%2) == 1){
-            Console.Write((arr[i])+"-----");
+            //Console.Write((arr[i])+"-----");
             num += arr[i];
-            Console.Write("|"+num+"|--/");
+            //Console.Write("|"+num+"|--/");
         }
     }
     return num;
 }
-Console.WriteLine(methodRandom(countArr));
+string GetResult(int[] arr){
+    string result = "";
+    for(int i = 0; i<arr.Length; i++){
+        
+        if((i%2) == 1){
+            if(result == ""){
+                result = arr[i].ToString();
+            } else {
+                result += ", "+arr[i].ToString();
+            }
+        }
+    }
+    result = "["+result+"]";
+    return result;
+}
+
+int[] arr = GetRandom(countArr);
+Console.WriteLine(GetNum(arr)+"---"+GetResult(arr));
 
 */
+
 //
 //
 //
@@ -78,7 +117,7 @@ Console.WriteLine(methodRandom(countArr));
 //Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 /*
 int countArr = 10;
-int[] methodRandom(int countForArr){
+int[] GetRandom(int countForArr){
     int[] arr = new int[countForArr];
     for(int i=0; i<countForArr; i++){
         arr[i] = new Random().Next(1, 100);
@@ -87,7 +126,7 @@ int[] methodRandom(int countForArr){
     return arr;
 }
 
-int methodMin(int[] arr){
+int GetMin(int[] arr){
     int min = arr[0];
     for(int i = 0; i<arr.Length; i++){
         if(min > arr[i]){
@@ -97,7 +136,7 @@ int methodMin(int[] arr){
     return min;
 }
 
-int methodMax(int[] arr){
+int GetMax(int[] arr){
     
     int max = arr[0];
     for(int i = 0; i<arr.Length; i++){
@@ -107,12 +146,12 @@ int methodMax(int[] arr){
     }
     return max;
 }
-int methodRes(int num1, int num2){
+int GetRes(int num1, int num2){
     
     return num2 - num1;
 }
-int[] arr = methodRandom(countArr);
-Console.WriteLine("Минимальное - "+methodMin(arr)+" Максимальное - "+methodMax(arr)+" Разница - "+methodRes(methodMin(arr), methodMax(arr)));
+int[] arr =GetRandom(countArr);
+Console.WriteLine("Минимальное - "+GetMin(arr)+" Максимальное - "+GetMax(arr)+" Разница - "+GetRes(GetMin(arr), GetMax(arr)));
 
 */
 
