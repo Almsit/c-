@@ -14,21 +14,7 @@ int GetNum(int[] arr){
     int num = 0;
     int numTemp = 0;
     for(int i=0; i<arr.Length; i++){
-        /*stringArr = arr[i].ToString();
-        numTemp = 0;
-        //Console.Write((arr[i])+"-----");
-        for(int k = 0; k<stringArr.Length; k++){
-            if(Convert.ToInt32(new string(stringArr[k], 1)) == 0){
-                continue;
-            }
-            if((stringArr[k]%2) == 0){
-                num++;
-                numTemp++;
-            }
-        }
-        //Console.Write(numTemp);
-        //Console.WriteLine(" ");
-        */
+       
         if((arr[i]%2) == 0){
             num++;
         }
