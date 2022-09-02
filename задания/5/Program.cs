@@ -76,6 +76,7 @@ Console.WriteLine(methodRandom(countArr));
 //
 
 //Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+/*
 int countArr = 10;
 int[] methodRandom(int countForArr){
     int[] arr = new int[countForArr];
@@ -113,5 +114,5 @@ int methodRes(int num1, int num2){
 int[] arr = methodRandom(countArr);
 Console.WriteLine("Минимальное - "+methodMin(arr)+" Максимальное - "+methodMax(arr)+" Разница - "+methodRes(methodMin(arr), methodMax(arr)));
 
-
+*/
 
