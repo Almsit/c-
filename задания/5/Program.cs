@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 //Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-/*
+
 int countArr = 10;
 int[] GetRandom(int countForArr){
     int[] arr = new int[countForArr];
@@ -14,7 +14,7 @@ int GetNum(int[] arr){
     int num = 0;
     int numTemp = 0;
     for(int i=0; i<arr.Length; i++){
-        stringArr = arr[i].ToString();
+        /*stringArr = arr[i].ToString();
         numTemp = 0;
         //Console.Write((arr[i])+"-----");
         for(int k = 0; k<stringArr.Length; k++){
@@ -28,10 +28,17 @@ int GetNum(int[] arr){
         }
         //Console.Write(numTemp);
         //Console.WriteLine(" ");
+        */
+        if(arr[i] == 0){
+            continue;
+        }
+        if((arr[i]%2) == 0){
+            num++;
+        }
     }
     return num;
 }
-string GetResult(int[] arr){
+string PrintArr(int[] arr){
     string result = "";
     for(int i = 0; i<arr.Length; i++){
         if(result == ""){
@@ -45,8 +52,8 @@ string GetResult(int[] arr){
 }
 
 int[] arr = GetRandom(countArr);
-Console.WriteLine(GetNum(arr)+"---"+GetResult(arr));
-*/
+Console.WriteLine(GetNum(arr)+"---"+PrintArr(arr));
+
 
 //
 //
@@ -81,7 +88,7 @@ int GetNum(int[] arr){
     }
     return num;
 }
-string GetResult(int[] arr){
+string PrintArr(int[] arr){
     string result = "";
     for(int i = 0; i<arr.Length; i++){
         
@@ -98,7 +105,7 @@ string GetResult(int[] arr){
 }
 
 int[] arr = GetRandom(countArr);
-Console.WriteLine(GetNum(arr)+"---"+GetResult(arr));
+Console.WriteLine(GetNum(arr)+"---"+PrintArr(arr));
 
 */
 
