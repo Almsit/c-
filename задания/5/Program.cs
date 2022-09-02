@@ -29,9 +29,6 @@ int GetNum(int[] arr){
         //Console.Write(numTemp);
         //Console.WriteLine(" ");
         */
-        if(arr[i] == 0){
-            continue;
-        }
         if((arr[i]%2) == 0){
             num++;
         }
