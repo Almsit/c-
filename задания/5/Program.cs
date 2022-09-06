@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 //Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-
+/*
 int countArr = 10;
 int[] GetRandom(int countForArr){
     int[] arr = new int[countForArr];
@@ -36,7 +36,7 @@ string PrintArr(int[] arr){
 
 int[] arr = GetRandom(countArr);
 Console.WriteLine(GetNum(arr)+"---"+PrintArr(arr));
-
+*/
 
 //
 //
@@ -145,3 +145,16 @@ Console.WriteLine("Минимальное - "+GetMin(arr)+" Максимальн
 
 */
 
+
+
+
+string[,] table = new string[2, 3];
+table[0, 0]  = "1";
+//Console.WriteLine(table.Length);
+for(var i = 0; i<table.GetLength(0); i++){
+    for(var k = 0; k<table.GetLength(1); k++){
+
+        Console.Write(table[i, k]);
+    }
+        Console.WriteLine();
+}
