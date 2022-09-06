@@ -53,7 +53,7 @@ void GetCoefficients(){
       else Console.Write($"Введите коэффициент b: ");
       coefficientis[i,j] = Convert.ToInt32(Console.ReadLine());
     }
-  }
+  } 
 }
 double[] GetResult(double[,] coefficientis)
 {
