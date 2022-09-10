@@ -98,7 +98,7 @@ int[,] GetArr(int numberInt1, int numberInt2){
     return array;
 }
 
-string[] FindNum(int[,] array, int numberInt3){
+int FindCountNum(int[,] array, int numberInt3){
     int k = 0;
     for (int i = 0; i < array.GetLength(0); i++){
         for (int j = 0; j < array.GetLength(1); j++){
@@ -111,6 +111,10 @@ string[] FindNum(int[,] array, int numberInt3){
     if(k == 0){
         k = 1;
     }
+    return k;
+}
+
+string[] FindNum(int[,] array, int k){
     string[] array2 = new string[k];
     k = 0;
     array2[k] = "Индекс не найден";
@@ -148,11 +152,11 @@ void PrintArr(int[,] array, string[] array2){
 }
 
 int[,] arr = GetArr(numberInt1, numberInt2);
-PrintArr(arr, FindNum(arr, numberInt3));
+PrintArr(arr, FindNum(arr,FindCountNum(arr, numberInt3)));
+
+
 
 */
-
-
 // Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 /*
@@ -169,7 +173,7 @@ bool Valid(bool n1, bool n2, int n3, int n4){
     }
     if(n3 == 0 || n4 == 0){
         
-        Console.WriteLine("Число должгл быть больше 0");
+        Console.WriteLine("Число должно быть больше 0");
         return true;
     }
     return true;
@@ -193,22 +197,22 @@ int[,] GetArr(int numberInt1, int numberInt2){
 }
 
 
-int[] GetSum(int[,] array){
-    int[] arr = new int[array.GetLength(0)];
-    int sum = 0;
+double[] GetSum(int[,] array){
+    double[] arr = new double[array.GetLength(0)];
+    double sum = 0;
     for (int i = 0; i < array.GetLength(0); i++){
         sum = 0;
         for (int j = 0; j < array.GetLength(1); j++){
             sum += array[i,j];
         }   
-        arr[i] = sum;
+        arr[i] = sum/array.GetLength(1);
     }
     
     return arr;
 }
 
 
-void PrintArr(int[,] array, int[] arr_sum){
+void PrintArr(int[,] array, double[] arr_sum){
     
 
     for (int i = 0; i < array.GetLength(0); i++){
@@ -217,7 +221,7 @@ void PrintArr(int[,] array, int[] arr_sum){
         }   
         Console.Write("]");
         
-        Console.Write(" Сумма "+arr_sum[i]);
+        Console.Write(" Среднее арифметическое -  "+arr_sum[i]);
         Console.WriteLine(""); 
     }
 }
