@@ -67,6 +67,7 @@ PrintArr(GetArr(numberInt1, numberInt2, GetCountArr(numberInt1, numberInt2)));
 //
 //
 //рекурсия
+/*
 
     Console.WriteLine("Рекурсия");
 
@@ -90,7 +91,7 @@ PrintArr(GetArr(numberInt1, numberInt2, GetCountArr(numberInt1, numberInt2)));
     }
 Console.WriteLine(GetCountArr(numberInt1, numberInt2));
 
-
+*/
 //
 //
 //
