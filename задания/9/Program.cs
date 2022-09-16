@@ -55,7 +55,42 @@ void PrintArr(int[] array){
 }
 PrintArr(GetArr(numberInt1, numberInt2, GetCountArr(numberInt1, numberInt2)));
 
+
+
+
+
+
+
+
+
 */
+//
+//
+//рекурсия
+/*
+    Console.WriteLine("Рекурсия");
+
+    int GetCountArr(int n, int m)
+    {
+        int k = 0;
+        for(int i=n; i<=m; i++){
+            k++;
+        }
+        return GetArr(n, m, k);
+    }
+    int GetArr(int n, int m, int k)
+    {   
+        for(int i=n; i<=m; i++){
+            PrintArr(i);
+        }
+        return 1;
+    }
+    void PrintArr(int num){
+        Console.Write(num);
+    }
+GetCountArr(numberInt1, numberInt2);
+*/
+
 //
 //
 //
@@ -122,7 +157,42 @@ void PrintArr(int[] array, int sum){
 }
 PrintArr(GetArr(numberInt1, numberInt2, GetCountArr(numberInt1, numberInt2)), GetSum(GetArr(numberInt1, numberInt2, GetCountArr(numberInt1, numberInt2))));
 */
+//
+//
+//
+/*
+Console.WriteLine("Рекурсия");
 
+    int GetCountArr(int n, int m)
+    {
+        int k = 0;
+        for(int i=n; i<=m; i++){
+            k++;
+        }
+        return GetArr(n, m, k);
+    }
+    int GetArr(int n, int m, int k)
+    {   
+        
+        int sum = 0;
+        for(int i=n; i<=m; i++){
+            
+            sum = GetSum(i, sum);
+            PrintArr(i, 0);
+        }
+        
+        Console.Write("Сумма чисел - "+sum);
+
+        return 1;
+    }
+    int GetSum(int n, int sum){
+        return sum+n;
+    }
+    void PrintArr(int num, int m){
+        Console.Write(num);
+    }
+GetCountArr(numberInt1, numberInt2);
+*/
 //
 //
 //
